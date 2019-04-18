@@ -10,7 +10,7 @@ node {
         sh 'mvn clean package -Dmaven.test.skip=true'
     }
     stage('Deploy') {
-        sh "pwd"
+        sh "./deploy.sh"
     }
 }
 
