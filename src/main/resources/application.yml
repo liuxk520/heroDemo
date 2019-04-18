@@ -1,0 +1,25 @@
+api:
+  base-path: /api
+liuxiaokang:
+  cors:
+    allowed-origins: "*"
+    allowed-methods: GET,POST,DELETE,PUT,OPTIONS
+    allowed-headers: Origin,X-Requested-With,Content-Type,Accept,Accept-Encoding,Accept-Language,Host,Referer,Connection,User-Agent,Authorization
+
+  jwt:
+    header: Authorization
+    secret: mySecret
+    expiration: 7200
+    issuer: ITRunner
+    authentication-path: /auth
+info:
+  app:
+    name: heroes
+    version: 1.0
+
+spring:
+  profiles:
+    active: dev
+management:
+  server:
+    port: 8090
