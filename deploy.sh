@@ -1,2 +1,3 @@
 cd /target
-java -jar *.jar
+ls
+java -jar heroes-api2-0.0.1-SNAPSHOT.jar
